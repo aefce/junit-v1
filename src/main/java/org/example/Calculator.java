@@ -14,4 +14,7 @@ public class Calculator {
             throw new IllegalArgumentException("半徑不可為負");
         }
     }
+    public int multiply(int a ,int b){
+        return a*b;
+    }
 }

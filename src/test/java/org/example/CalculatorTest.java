@@ -50,4 +50,14 @@ class CalculatorTest {
             calculator.circleArea(-5.0);
         });
     }
+    @Test
+    @DisplayName("測試乘法功能")
+    void test_Multiplication() {
+        // Arrange
+        Calculator calculator = new Calculator();
+        // Act & Assert
+        assertEquals(6, calculator.multiply(2, 3), "2 * 3 應該要等於 6");
+        assertEquals(-6, calculator.multiply(2, -3), "2 * -3 應該要等於 -6");
+        assertEquals(0, calculator.multiply(0, 5), "0 * 5 應該要等於 0");
+    }
 }
